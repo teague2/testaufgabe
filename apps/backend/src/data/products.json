@@ -1,0 +1,86 @@
+[
+  {
+    "id": 12345,
+    "name": "Gummistiefel",
+    "price": 1300,
+    "description": "Strapazierfähige Gummistiefel, perfekt für regnerische Tage. Halten Ihre Füße trocken und bequem.",
+    "image": "https://images.unsplash.com/photo-1518319431989-3ed1fdb08c7b"
+  },
+  {
+    "id": 23456,
+    "name": "Handschuhe",
+    "price": 500,
+    "description": "Wärmende Handschuhe für kalte Wintertage. Hergestellt aus hochwertigem Material, um Ihre Hände warm zu halten.",
+    "image": "https://images.unsplash.com/photo-1519766400364-8824dc3c4e26"
+  },
+  {
+    "id": 34567,
+    "name": "Hemd",
+    "price": 1300,
+    "description": "Ein stilvolles Hemd für verschiedene Anlässe. Hochwertige Verarbeitung und bequeme Passform.",
+    "image": "https://images.unsplash.com/photo-1598033129183-c4f50c736f10"
+  },
+  {
+    "id": 45678,
+    "name": "Jeans",
+    "price": 4000,
+    "description": "Robuste Jeanshose, ideal für den Alltag. Klassisches Design und hoher Tragekomfort.",
+    "image": "https://plus.unsplash.com/premium_photo-1691367279313-71af7ba83f2d"
+  },
+  {
+    "id": 56789,
+    "name": "Mütze",
+    "price": 500,
+    "description": "Eine gemütliche Mütze, um Ihren Kopf warm zu halten. Perfekt für kalte Tage im Freien.",
+    "image": "https://images.unsplash.com/photo-1612887726773-e64e20cf08fe"
+  },
+  {
+    "id": 67890,
+    "name": "Pullover",
+    "price": 1700,
+    "description": "Ein warmer Pullover mit stilvollem Design. Ideal für Herbst- und Wintertage.",
+    "image": "https://images.unsplash.com/photo-1607160199580-1b0c9b736b66"
+  },
+  {
+    "id": 78901,
+    "name": "Regenjacke",
+    "price": 2500,
+    "description": "Wasserdichte Regenjacke, schützt vor Regen und Wind. Perfekt für Outdoor-Aktivitäten.",
+    "image": "https://images.unsplash.com/photo-1610552050024-18deb63ab882"
+  },
+  {
+    "id": 89012,
+    "name": "Rucksack",
+    "price": 15000,
+    "description": "Geräumiger Rucksack mit vielen Taschen. Ideal für Reisen und den täglichen Gebrauch.",
+    "image": "https://images.unsplash.com/photo-1514524865930-188150490d83"
+  },
+  {
+    "id": 90123,
+    "name": "Sandalen",
+    "price": 700,
+    "description": "Bequeme Sandalen für den Sommer. Leicht und luftig, perfekt für entspannte Spaziergänge.",
+    "image": "https://images.unsplash.com/photo-1513654233834-19416b6eed13"
+  },
+  {
+    "id": 12344,
+    "name": "Shorts",
+    "price": 2000,
+    "description": "Luftige Shorts für warme Tage. Bequem und stilvoll, geeignet für Freizeitaktivitäten.",
+    "image": "https://images.unsplash.com/photo-1591195853828-11db59a44f6b"
+  },
+  {
+    "id": 23455,
+    "name": "T-Shirt",
+    "price": 1000,
+    "description": "Klassisches T-Shirt, vielseitig und bequem. Ein Must-Have in jedem Kleiderschrank.",
+    "image": "https://images.unsplash.com/photo-1651761179569-4ba2aa054997"
+  },
+  {
+    "id": 34566,
+    "name": "Winterjacke",
+    "price": 6000,
+    "description": "Warm gefütterte Winterjacke für extreme Kälte. Stilvoll und funktional für den Winter.",
+    "image": "https://images.unsplash.com/photo-1605814932543-d408d14a4cea"
+  }
+]

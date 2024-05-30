@@ -1,0 +1,35 @@
+{
+  "name": "backend",
+  "version": "1.0.0",
+  "description": "",
+  "type": "module",
+  "types": "node",
+  "main": "src/index.ts",
+  "scripts": {
+    "compile": "tsc",
+    "dev": "tsx --watch src/index.ts",
+    "preview": "tsx src/index.ts",
+    "test": "vitest"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@apollo/server": "^4.10.4",
+    "@repo/fixtures": "workspace:*",
+    "clean": "^4.0.2",
+    "effect": "^3.2.5",
+    "graphql": "^16.8.1",
+    "graphql-type-json": "^0.3.2",
+    "import": "^0.0.6",
+    "nanoid": "^5.0.7",
+    "valibot": "0.31.0-rc.2"
+  },
+  "devDependencies": {
+    "@types/node": "^18.19.33",
+    "ts-node": "^10.9.2",
+    "tsx": "^4.11.0",
+    "typescript": "^5.4.5",
+    "vitest": "^1.6.0"
+  }
+}
