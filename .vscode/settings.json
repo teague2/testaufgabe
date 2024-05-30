@@ -1,0 +1,11 @@
+{
+  "eslint.workingDirectories": [
+    {
+      "mode": "auto"
+    }
+  ],
+  "CodeGPT.apiKey": "Ollama",
+  "CodeGPT.Autocomplete.suggestionDelay": 1500,
+  "CodeGPT.Autocomplete.provider": "Ollama - starcoder2",
+  "CodeGPT.Autocomplete.enabled": true
+}

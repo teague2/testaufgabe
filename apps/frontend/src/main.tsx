@@ -1,20 +1,21 @@
-import React from 'react'
-import ReactDOM from 'react-dom/client'
-import './index.css'
+import React from "react";
+import ReactDOM from "react-dom/client";
+import "./index.css";
 
-import {
-  createBrowserRouter,
-  RouterProvider,
-} from "react-router-dom";
-import ProductListPage from './pages/ProductList';
-import ProductDetailPage from './pages/ProductDetail';
-import App from './App';
-import CartPage from './pages/Cart';
+import { createBrowserRouter, RouterProvider } from "react-router-dom";
+import ProductListPage from "./pages/ProductList";
+import ProductDetailPage from "./pages/ProductDetail";
+import App from "./App";
+import CartPage from "./pages/Cart";
 
 const router = createBrowserRouter([
   {
     path: "/",
-    element: <div><App /></div>,
+    element: (
+      <div>
+        <App />
+      </div>
+    ),
     children: [
       {
         index: true,
@@ -32,8 +33,8 @@ const router = createBrowserRouter([
   },
 ]);
 
-ReactDOM.createRoot(document.getElementById('root')!).render(
+ReactDOM.createRoot(document.getElementById("root")!).render(
   <React.StrictMode>
     <RouterProvider router={router} />
   </React.StrictMode>,
-)
+);

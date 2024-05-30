@@ -32,4 +32,4 @@ export const typeDefs = `#graphql
         price: Int
         image: String
     }
-`;
+`

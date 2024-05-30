@@ -1,15 +1,15 @@
-import { Product } from '../../types';
-import ProductListItemComponent from '../ProductListItem';
+import { Product } from "../../types";
+import ProductListItemComponent from "../ProductListItem";
 
 type ProductListComponentProps = {
-    products: Product[];
-}
+  products: Product[];
+};
 
-const ProductListComponent = ({products} : ProductListComponentProps) => {
+const ProductListComponent = ({ products }: ProductListComponentProps) => {
   return (
     <>
       {products.map((product) => (
-          <ProductListItemComponent product={product} key={product.id} />
+        <ProductListItemComponent product={product} key={product.id} />
       ))}
     </>
   );

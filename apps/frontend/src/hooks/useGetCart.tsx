@@ -20,11 +20,16 @@ interface GetCartResponse {
   cart: Cart;
 }
 
-export function useGetCart({ polling, pollInterval }: GetCartProps = { polling: false, pollInterval: 5000 }) {
+export function useGetCart(
+  { polling, pollInterval }: GetCartProps = {
+    polling: false,
+    pollInterval: 5000,
+  },
+) {
   const [result, reexecuteQuery] = useQuery<GetCartResponse>({
     query: GET_CART,
   });
- 
+
   useEffect(() => {
     if (!polling || result.fetching) return;
 
@@ -35,7 +40,7 @@ export function useGetCart({ polling, pollInterval }: GetCartProps = { polling: 
 
     return () => clearTimeout(timerId);
   }, [polling, pollInterval, result.fetching, reexecuteQuery]);
-  
+
   const { data, fetching, error } = result;
 
   return {

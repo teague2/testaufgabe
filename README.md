@@ -22,7 +22,7 @@ Die Warenkorbseite zeigt alle Produkte an, die sich im Warenkorb befinden. Einze
 - Fokus auf funktionale Schreibweise und Modularität des Codes
 - Hinzufügen von Tests für die Basisfunktionalitäten
 - Du kannst `products.json` als Datengrundlage nehmen
-.
+  .
 
 ## Using this example
 

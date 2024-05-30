@@ -1,10 +1,10 @@
-import { GraphQLError } from "graphql";
-import { Product, ProductId } from "./product.model";
-import { ERRORS } from "../errors";
+import { GraphQLError } from 'graphql'
+import { Product, ProductId } from './product.model'
+import { ERRORS } from '../errors'
 
 export interface ProductsService {
-  getProduct(id: ProductId): Product;
-  getProducts(): Product[];
+  getProduct(id: ProductId): Product
+  getProducts(): Product[]
 }
 
 export const productsService = (products: Product[]): ProductsService => {

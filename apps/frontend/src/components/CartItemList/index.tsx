@@ -2,8 +2,8 @@ import { RemoveCartItem } from "../../hooks/useRemoveCartItem";
 import { CartItem } from "../../types/Cart";
 
 type CartItemListComponentProps = {
-  items: CartItem[],
-  onRemoveCartItem: RemoveCartItem
+  items: CartItem[];
+  onRemoveCartItem: RemoveCartItem;
 };
 
 const CartItemListComponent = ({

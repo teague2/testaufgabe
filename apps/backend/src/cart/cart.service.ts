@@ -63,7 +63,7 @@ const decrementCartItemQuantity =
       }),
     }
   }
-  
+
 const removeCartItem =
   (productId: CartItem['productId']) =>
   (cart: Cart): Cart => {

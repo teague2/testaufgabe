@@ -27,5 +27,5 @@ export function useGetProduct({ id }: GetProductProps) {
     variables: { id },
   });
 
-  return result
+  return result;
 }

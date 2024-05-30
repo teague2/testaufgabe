@@ -1,5 +1,5 @@
-import { Context } from "../context"
-import { Product, ProductId } from "./product.model"
+import { Context } from '../context'
+import { Product, ProductId } from './product.model'
 
 export const getProduct = (_: any, args: { id: ProductId }, { productsService }: Context): Product | undefined =>
   productsService.getProduct(Number(args.id))

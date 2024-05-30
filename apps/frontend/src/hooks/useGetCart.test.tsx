@@ -5,7 +5,6 @@ import { Provider } from "urql";
 import { never, makeSubject } from "wonka";
 import { PropsWithChildren } from "react";
 
-
 describe("useGetCart", () => {
   const mockProviderWrapper = ({ executeQuery }: { executeQuery: any }) => {
     const mockClient = {
@@ -55,7 +54,7 @@ describe("useGetCart", () => {
       () => useGetCart({ polling: true, pollInterval: 50 }),
       {
         wrapper,
-      }
+      },
     );
 
     const mockCart = {

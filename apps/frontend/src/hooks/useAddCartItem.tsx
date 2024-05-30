@@ -29,7 +29,7 @@ export const useAddCartItem = () => {
 
   const addCartItem = async (
     productId: number,
-    quantity: number = 1
+    quantity: number = 1,
   ): Promise<Cart | undefined> => {
     try {
       const response = await mutationFunction({ productId, quantity });

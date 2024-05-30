@@ -18,7 +18,9 @@ export interface RemoveCartItemResponse {
   cart: Cart;
 }
 
-export type RemoveCartItem = ReturnType<typeof useRemoveCartItem>["removeCartItem"];
+export type RemoveCartItem = ReturnType<
+  typeof useRemoveCartItem
+>["removeCartItem"];
 
 export const useRemoveCartItem = () => {
   const [_, mutationFunction] = useMutation<
@@ -27,7 +29,7 @@ export const useRemoveCartItem = () => {
   >(REMOVE_CART_ITEM);
 
   const removeCartItem = async (
-    productId: number
+    productId: number,
   ): Promise<Cart | undefined> => {
     try {
       const response = await mutationFunction({ productId });

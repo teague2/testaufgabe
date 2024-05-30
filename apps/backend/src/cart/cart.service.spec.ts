@@ -5,12 +5,12 @@ import { type Cart, type CartItem } from './cart.model' // Assuming your product
 describe('Cart Service Tests', () => {
   it('should retrieve the cart', async () => {
     const mockCart: Cart = {
-        items: new Map([
-            [1, { productId: 1, name: 'Product 1', price: 1, quantity: 3 } ],
-            [2, { productId: 2, name: 'Product 2', price: 2, quantity: 5 } ]
-        ]),
-        sum: 13
-    }   
+      items: new Map([
+        [1, { productId: 1, name: 'Product 1', price: 1, quantity: 3 }],
+        [2, { productId: 2, name: 'Product 2', price: 2, quantity: 5 }],
+      ]),
+      sum: 13,
+    }
     const result = await cartService(mockCart).getCart()
     expect(result).toEqual(mockCart)
   })
@@ -24,7 +24,10 @@ describe('Cart Service Tests', () => {
       sum: 13,
     }
     const mockItem: CartItem = {
-      productId: 3, name: 'Product 3', price: 14, quantity: 1
+      productId: 3,
+      name: 'Product 3',
+      price: 14,
+      quantity: 1,
     }
 
     const result = await cartService(mockCart).addItem(mockItem)
