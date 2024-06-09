@@ -1,4 +1,4 @@
-export const ERRORS = {
+export const Errors = {
   PRODUCT_NOT_FOUND: 'PRODUCT_NOT_FOUND',
   CART_ITEM_NOT_FOUND: 'CART_ITEM_NOT_FOUND',
 } as const

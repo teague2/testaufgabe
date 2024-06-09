@@ -1,10 +1,19 @@
 import { CartService, cartService } from './cart'
-import { ProductsService, productsService } from './products'
+import { Context, Layer, ManagedRuntime } from 'effect'
+import {
+  OldProductsService,
+  ProductsDatabaseLayer,
+  ProductsRepositoryLayer,
+  ProductsService,
+  ProductsServiceLayer,
+  oldProductsService,
+} from './products/products.service'
 import products from './data/products.json'
 
-export interface Context {
-  productsService: ProductsService
+export type Context = {
+  productsService: OldProductsService
   cartService: CartService
+  runtime: ManagedRuntime.ManagedRuntime<ProductsService, never>
 }
 
 const cart = {
@@ -12,7 +21,15 @@ const cart = {
   sum: 0,
 }
 
-export const context = () => ({
-  cartService: cartService(cart),
-  productsService: productsService(products),
-})
+const contextLayer = ProductsServiceLayer.pipe(
+  Layer.provide(ProductsRepositoryLayer.pipe(Layer.provide(ProductsDatabaseLayer))),
+)
+const runtime = ManagedRuntime.make(contextLayer)
+
+export const context = () => {
+  return {
+    cartService: cartService(cart),
+    productsService: oldProductsService(products),
+    runtime,
+  }
+}

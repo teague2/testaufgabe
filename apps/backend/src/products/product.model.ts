@@ -1,6 +1,6 @@
 export type ProductId = number
 
-export interface Product {
+export type Product = {
   id: ProductId
   name: string
   price: number

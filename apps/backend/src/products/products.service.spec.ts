@@ -1,5 +1,5 @@
-import { describe, expect, it, vi } from 'vitest'
-import { productsService } from './products.service'
+import { describe, expect, it } from 'vitest'
+import { oldProductsService } from './products.service'
 import { type Product } from './product.model' // Assuming your product model resides in ./product.model.ts file
 
 describe('Products Service Tests', () => {
@@ -9,7 +9,7 @@ describe('Products Service Tests', () => {
       { id: 2, name: 'Product 2', description: 'Second product', image: 'https://fake.image.com/2', price: 2 },
     ]
 
-    const result = await productsService(mockProducts).getProducts()
+    const result = await oldProductsService(mockProducts).getProducts()
     expect(result).toEqual(mockProducts)
   })
 
@@ -23,7 +23,7 @@ describe('Products Service Tests', () => {
       price: 1,
     }
 
-    const result = await productsService([mockProduct]).getProduct(productId)
+    const result = await oldProductsService([mockProduct]).getProduct(productId)
     expect(result).toEqual(mockProduct)
   })
 })
